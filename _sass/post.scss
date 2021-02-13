@@ -1,0 +1,8 @@
+.post {
+  max-width: $tabletWidth;
+  margin: $xl $m;
+
+  @media (min-width: calc(#{$tabletWidth} + 48px)) {
+    margin: $xl auto;
+  }
+}

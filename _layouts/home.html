@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+  	{% include nav.html %}
+  	{% include hero.html %}
+  	{% include quotes.html 
+  		quote1="I've travelled the world as a freelancer using the skills I learned with HackingUX, and now I work for one of the UK's leading digital agencies!" name1="Name" position1="Position, Company"
+  		quote2="I've travelled the world as a freelancer using the skills I learned with HackingUX, and now I work for one of the UK's leading digital agencies!" name2="Name" position2="Position, Company"
+  		quote3="I've travelled the world as a freelancer using the skills I learned with HackingUX, and now I work for one of the UK's leading digital agencies!" name3="Name" position3="Position, Company" 
+	%}
+    {{ content }}
+	<div class="hero">
+		<div class="hero-content">
+			<p class="small">Part 1</p>
+			<h2>The no BS UX process</h2>
+			<p class="secondary">Everything you need to know about the UX Design process to get started in your new career, in the right amount of detail. Also includes essential background reading and our guide to design tools.</p>
+		</div>
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="hero-content">
+			<p class="small">Part 2</p>
+			<h2>What a bootcamp won’t teach you</h2>
+			<p class="secondary">Truly the secret sauce. We've broken down the crucial non-UX skills, attitudes and learnings that you can apply to make you stand out in the crowd of applicants.</p>
+		</div>
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="hero-content">
+			<p class="small">Part 3</p>
+			<h2>Nailing your online presence</h2>
+			<p class="secondary">Everything you need to know about building your brand, including the perfect portfolio structure and lessons on how to build your network.</p>
+		</div>
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="hero-content">
+			<p class="small">Part 4</p>
+			<h2>Getting a job</h2>
+			<p class="secondary">All the teachings and insight you need to score the first job of your new career, including mock interview questions, insights from hiring managers and more.</p>
+		</div>
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+		<div class="hero-content">
+			<p>You could spend months and thousands of dollars learning the basics in a UX bootcamp.</p>
+		</div>
+	</div>
+    <div class="hero">
+		<div class="hero-content">
+			<p>Or, you could spend $19 and learn what you need to get started today.</p>
+			<a class="button" href="/">Get the guide</a>
+		</div>
+		<div class="hero-image">
+			<img src="../assets/images/hux.svg"/>
+		</div>
+	</div>
+    {% include footer.html %}
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>

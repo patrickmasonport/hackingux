@@ -1,0 +1,31 @@
+.hero {
+	margin: $xl $m;
+	text-align: center;
+	display: grid;
+	grid-gap: $l;
+	max-width: $tabletWidth;
+
+	.hero-image {
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+
+	@media (min-width: calc(#{$tabletWidth} + 48px)) {
+		margin: $xl auto;
+	}
+
+	@media (min-width: $bp-t) {
+	  	margin: $xl $m;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: $xl;
+		align-items: center;
+		text-align: left;
+		max-width: $pageWidth;
+	}
+
+	@media (min-width: $pageWidth) {
+		margin: $xl auto;
+	}
+}

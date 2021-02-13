@@ -1,0 +1,37 @@
+nav {
+  margin: auto $m;
+  
+  @media (min-width: $bp-t) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-right: $l;
+
+        &.button {
+          padding: $s;
+        }
+      }
+
+      :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (min-width: $pageWidth) {
+    max-width: $pageWidth;
+    margin: auto;
+  }
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: $xxs;
+}

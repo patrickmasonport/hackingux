@@ -1,0 +1,39 @@
+.quotes {
+	display: grid;
+	grid-gap: $l;
+	margin: $xxxl $m;
+	max-width: $tabletWidth;
+
+	.quote {
+		p.small {
+			margin-bottom: $s;
+		}
+		
+		.author {
+			display: flex;
+			align-items: center;
+
+			.author-image {
+				margin-right: $s;
+			}
+
+			.author-name {
+
+			}
+		}
+	}
+
+	@media (min-width: calc(#{$tabletWidth} + 48px)) {
+		margin: $xxxl auto;
+	}
+
+	@media (min-width: $bp-t) {
+		max-width: $pageWidth;
+		margin: $xxxl $m;
+		grid-template-columns: 1fr 1fr 1fr;
+  	}
+
+	@media (min-width: $pageWidth) {
+		margin: $xxxl auto;
+  	}
+}
